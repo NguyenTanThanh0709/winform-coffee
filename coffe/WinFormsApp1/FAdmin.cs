@@ -1342,6 +1342,7 @@ namespace Coffee
             {
                 String mahd = dataGridView_listbaoca.SelectedCells[0].OwningRow.Cells["Ma_hd_bh"].Value.ToString();
                 Fchitietmonan f = new Fchitietmonan();
+               
                 f.Mahh = mahd;
                 f.ShowDialog();
             }

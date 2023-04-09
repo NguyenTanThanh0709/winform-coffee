@@ -76,7 +76,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FPayOnline";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FPayOnline";
+            this.Text = "Pay Online";
             this.Load += new System.EventHandler(this.FPayOnline_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

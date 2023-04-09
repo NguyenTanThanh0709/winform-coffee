@@ -378,7 +378,7 @@
             this.Controls.Add(this.pnl_header);
             this.Name = "FRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FRegister";
+            this.Text = "Register";
             this.pnl_logo.ResumeLayout(false);
             this.pnl_logo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

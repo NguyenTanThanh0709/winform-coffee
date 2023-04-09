@@ -239,7 +239,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "FOrder";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FOrder";
+            this.Text = "Order";
             this.Load += new System.EventHandler(this.FOrder_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

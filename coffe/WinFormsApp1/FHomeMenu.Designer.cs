@@ -1260,7 +1260,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "FHomeMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FHomeMenu";
+            this.Text = "Trang Bán Hàng";
             this.Load += new System.EventHandler(this.FHomeMenu_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

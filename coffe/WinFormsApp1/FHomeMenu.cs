@@ -458,7 +458,7 @@ namespace Coffee
                 FPayOnline home = new FPayOnline();
                 home.ShowDialog();
                 HandleThanhToan();
-                MessageBox.Show("SHOW HOA DON");
+                
                 
                 listorder.Clear();
                 loadListorder(Listorder);
@@ -466,7 +466,7 @@ namespace Coffee
             else if (cb_tienmat.Checked)
             {
                 HandleThanhToan();
-                MessageBox.Show("SHOW HOA DON");
+               
                 listorder.Clear();
                 loadListorder(Listorder);
             }
@@ -523,6 +523,11 @@ namespace Coffee
                 }
 
             }
+
+            HoaDonReport report= new HoaDonReport();
+            report.Tienkhachdua = Int32.Parse(textBox_tienkhachdua.Text.ToString());
+            report.Hoadonbanhang = HoaDonBanHangDAO.Instance.getHD_theoten(mahoaDon);
+            report.ShowDialog();
         }
 
 

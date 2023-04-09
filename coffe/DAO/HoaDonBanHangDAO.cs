@@ -55,6 +55,23 @@ namespace DAO
             return dh;
         }
 
+
+        public Hoadonbanhang getHD_theoten(String trangthai)
+        {
+            String query = "select * from hoadonbanhang where ma_hd_bh = @trangthai";
+
+            List<Hoadonbanhang> dh = new List<Hoadonbanhang>();
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { trangthai });
+
+            foreach (DataRow item in data.Rows)
+            {
+                Hoadonbanhang hh = new Hoadonbanhang(item);
+                dh.Add(hh);
+            }
+
+            return dh[0];
+        }
+
         public List<Hoadonbanhang> getall()
         {
             String query = "select * from hoadonbanhang";

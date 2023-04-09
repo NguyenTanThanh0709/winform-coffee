@@ -50,3 +50,6 @@ E:\Documents\OneDrive - student.tdtu.edu.vn\Desktop\skzmcwklnvef\WinFormsApp1\ob
 E:\Documents\OneDrive - student.tdtu.edu.vn\Desktop\skzmcwklnvef\WinFormsApp1\obj\Debug\net6.0-windows\Coffee.Fchitietmonan.resources
 E:\Documents\OneDrive - student.tdtu.edu.vn\Desktop\skzmcwklnvef\WinFormsApp1\obj\Debug\net6.0-windows\Interop.Microsoft.Office.Interop.Excel.dll
 E:\Documents\OneDrive - student.tdtu.edu.vn\Desktop\skzmcwklnvef\WinFormsApp1\obj\Debug\net6.0-windows\Coffee.csproj.ResolveComReference.cache
+E:\Documents\OneDrive - student.tdtu.edu.vn\Desktop\skzmcwklnvef\WinFormsApp1\obj\Debug\net6.0-windows\Coffee.HoaDonReport.resources
+E:\Documents\OneDrive - student.tdtu.edu.vn\Desktop\skzmcwklnvef\WinFormsApp1\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+E:\Documents\OneDrive - student.tdtu.edu.vn\Desktop\skzmcwklnvef\WinFormsApp1\bin\Debug\net6.0-windows\itextsharp.dll

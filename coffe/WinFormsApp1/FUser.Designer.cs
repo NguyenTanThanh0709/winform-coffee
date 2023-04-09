@@ -1215,7 +1215,7 @@
             this.Controls.Add(this.panelMenu);
             this.Name = "FUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FUser";
+            this.Text = "User";
             this.Load += new System.EventHandler(this.FUser_Load);
             this.panelMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

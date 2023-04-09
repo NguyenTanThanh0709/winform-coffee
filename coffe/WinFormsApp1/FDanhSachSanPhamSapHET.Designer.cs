@@ -99,7 +99,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "FDanhSachSanPhamSapHET";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FDanhSachSanPhamSapHET";
+            this.Text = "Danh sách sản phẩm sắp hết hàng";
             this.Load += new System.EventHandler(this.FDanhSachSanPhamSapHET_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

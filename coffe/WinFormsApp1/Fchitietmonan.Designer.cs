@@ -88,7 +88,7 @@
             this.Controls.Add(this.dataGridView_list);
             this.Controls.Add(this.panel1);
             this.Name = "Fchitietmonan";
-            this.Text = "Fchitietmonan";
+            this.Text = "Chi Tiết Món Ăn";
             this.Load += new System.EventHandler(this.Fchitietmonan_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

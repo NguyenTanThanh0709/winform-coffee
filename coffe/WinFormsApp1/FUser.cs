@@ -1,4 +1,5 @@
 ﻿using BUS;
+using DAO;
 using DTO;
 using System;
 using System.Collections.Generic;
@@ -141,7 +142,8 @@ namespace Coffee
 
         private void FUser_Load(object sender, EventArgs e)
         {
-            loadInfoHD();
+            
+
 
 
 
@@ -186,6 +188,11 @@ namespace Coffee
                 tien += i.Total;
             }
             textBox_thanhtien.Text = tien.ToString();
+
+            listorder.Clear();
+            loadListorder(listorder);
+            loadListorderonline(listorder);
+            loadInfoHD();
         }
 
         private void load()
@@ -332,7 +339,10 @@ namespace Coffee
                         LichSuMuaHangBUS.Instance.insert(mahoadon, order.Name, khachhang.Sdt, order.Count, order.Total, today.ToString());
                     }
 
-                    MessageBox.Show("Show hoa don");
+                    HoaDonReport report = new HoaDonReport();
+                    report.Tienkhachdua = -1;
+                    report.Hoadonbanhang = HoaDonBanHangDAO.Instance.getHD_theoten(mahoadon);
+                    report.ShowDialog();
 
                     Listorder.Clear();
 
@@ -377,7 +387,10 @@ namespace Coffee
                         LichSuMuaHangBUS.Instance.insert(mahoadon, order.Name, khachhang.Sdt, order.Count, order.Total, today.ToString());
                     }
                     //this.Show();
-                    MessageBox.Show("show hoa don");
+                    HoaDonReport report = new HoaDonReport();
+                    report.Tienkhachdua = -1;
+                    report.Hoadonbanhang = HoaDonBanHangDAO.Instance.getHD_theoten(mahoadon);
+                    report.ShowDialog();
                     Listorder.Clear();
                     loadListorder(listorder);
                     panel_listban.Controls.Clear();
@@ -733,8 +746,11 @@ namespace Coffee
                         LichSuMuaHangBUS.Instance.insert(mahoadon, order.Name, khachhang.Sdt, order.Count, order.Total, today.ToString());
                     }
 
-                    
-                    MessageBox.Show("Show hoa don");
+
+                    HoaDonReport report = new HoaDonReport();
+                    report.Tienkhachdua = -1;
+                    report.Hoadonbanhang = HoaDonBanHangDAO.Instance.getHD_theoten(mahoadon);
+                    report.ShowDialog();
 
                     listorder.Clear();
                     loadListorderonline(listorder);
@@ -780,6 +796,11 @@ namespace Coffee
 
                     FPayOnline home = new FPayOnline();
                     home.ShowDialog();
+
+                    HoaDonReport report = new HoaDonReport();
+                    report.Tienkhachdua = -1;
+                    report.Hoadonbanhang = HoaDonBanHangDAO.Instance.getHD_theoten(mahoadon);
+                    report.ShowDialog();
 
                     listorder.Clear();
                     loadListorderonline(listorder);
